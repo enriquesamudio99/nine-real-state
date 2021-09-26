@@ -1,0 +1,76 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.featured {
+    background-position: center, -400px -200px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5) 50%, v.$primary 0%), url(../img/destacada.jpg);
+
+    @include m.sm {
+        background-position: center, -200px -200px;
+    }
+
+    @include m.md {
+        background-position: center, -100px -200px;
+    }
+  
+    @include m.lg { 
+        background-position: center, -500px center;
+        background-size: 100%, cover;
+        padding: calc(v.$gutter * 3) 0;
+        background-image: linear-gradient(to right, rgba(0,0,0,.5) 50%, v.$primary 0%), url(../img/destacada.jpg);
+    }
+
+    @include m.xl {
+        background-position: center, -650px center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: v.$gutter;
+
+        @include m.lg { 
+            grid-template-rows: unset;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: unset;
+            column-gap: v.$gutter;
+        }
+
+    }
+
+    &__content {
+        grid-row: 2 / 3;
+        text-align: left;
+        color: v.$white;
+        padding: 2rem 0;
+
+        @include m.lg { 
+            padding: 0;
+            grid-row: unset;
+            grid-column: 2 / 3;
+        }
+    }
+
+    &__text {
+        @include m.md { 
+            font-size: 1.125rem;
+        }
+    }
+
+    &__price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include m.md { 
+            font-size: 1.75rem;
+        }
+    }
+
+    &__link {
+        @include m.btn(v.$white, v.$primary); 
+        margin-top: 1rem;
+    }
+}
