@@ -711,6 +711,11 @@ p {
 }
 @media (min-width: 1200px) {
   .featured {
+    background-position: center, -600px center;
+  }
+}
+@media (min-width: 1400px) {
+  .featured {
     background-position: center, -650px center;
   }
 }

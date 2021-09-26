@@ -23,6 +23,10 @@
     }
 
     @include m.xl {
+        background-position: center, -600px center;
+    }
+
+    @include m.xxl {
         background-position: center, -650px center;
     }
 
