@@ -19,8 +19,7 @@ function compileCSS(done) {
             outputStyle: "expanded"
         }) )
         .pipe(postcss([
-            autoprefixer(),
-            cssnano()
+            autoprefixer()
         ]))
         .pipe(sourcemaps.write("."))
         .pipe( dest("build/css"));

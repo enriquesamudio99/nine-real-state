@@ -13,9 +13,10 @@ html {
   
 body {
     font-family: v.$mainFont;
+    background-color: darken(v.$lightGray, 3%);
     color: v.$black;
-    font-size: 1rem;
-    line-height: 1.618;
+    font-size: 1rem; 
+    line-height: 1.618; 
 }
 
 img {

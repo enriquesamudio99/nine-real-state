@@ -1,5 +1,6 @@
 // Fonts
-
+$mainFont: "Roboto", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
 
 // Media Queries
 $sm: 576px;
@@ -9,5 +10,11 @@ $xl: 1200px;
 $xxl: 1400px;
 
 // Colors
+$primary: #3b4862;
+$black: #000000;
+$white: #FFFFFF;
+$gray: #eeefed;
+$lightGray: #f8f8f8;
 
 // Units
+$gutter: 3.5rem;
