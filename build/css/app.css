@@ -404,11 +404,11 @@ a {
   }
 }
 .section {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 @media (min-width: 992px) {
   .section {
-    padding: 3rem 0;
+    padding: 6rem 0;
   }
 }
 
@@ -458,6 +458,23 @@ h3 {
 }
 p {
   margin: 0 0 1rem;
+}
+
+.heading {
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 3.5rem;
+}
+.heading span {
+  font-weight: 700;
+}
+.heading::after {
+  content: "";
+  display: block;
+  margin-top: 0.75rem;
+  height: 10px;
+  width: 50%;
+  background-image: linear-gradient(to right, #3b4862 0%, #3b4862 50%, #6277a1 50%, #6277a1 100%);
 }
 
 .header {
@@ -574,6 +591,98 @@ p {
   .nav__link:last-of-type {
     margin-right: 0;
   }
+}
+
+@media (min-width: 992px) {
+  .properties {
+    margin-top: 3rem;
+  }
+}
+.properties__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 576px) {
+  .properties__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .properties__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.property {
+  background-color: #FFFFFF;
+}
+.property__img {
+  aspect-ratio: 4/3;
+  background-size: cover;
+  position: relative;
+}
+.property:nth-child(1) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_1.jpg");
+}
+.property:nth-child(2) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_2.jpg");
+}
+.property:nth-child(3) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_3.jpg");
+}
+.property:nth-child(4) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_4.jpg");
+}
+.property:nth-child(5) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_5.jpg");
+}
+.property:nth-child(6) .property__img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/propiedad_6.jpg");
+}
+.property__name {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0.75rem;
+  margin: 0;
+  color: #FFFFFF;
+}
+.property__content {
+  padding: 1.5rem;
+}
+.property__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .property__price {
+    font-size: 1.75rem;
+  }
+}
+.property__link {
+  background-color: #3b4862;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+@media (min-width: 768px) {
+  .property__link {
+    width: auto;
+    font-size: 1.25rem;
+  }
+}
+.property__link:hover {
+  background-color: #283142;
 }
 
 .text-center {

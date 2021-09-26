@@ -50,3 +50,23 @@ h3 {
 p { 
     margin: 0 0 1rem;
 }
+
+.heading {
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: v.$gutter;
+
+    span {
+        font-weight: 700;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: .75rem;
+        height: 10px;
+        width: 50%;
+        background-image: linear-gradient(to right, v.$primary 0%, v.$primary 50%, lighten(v.$primary, 20%) 50%, lighten(v.$primary, 20%) 100%);
+    }
+
+}

@@ -32,10 +32,10 @@
 
 @mixin btn($bgColor, $textColor) {
     background-color: $bgColor;
-    padding: 1.5rem 4rem;
+    padding: 1rem 2rem;
     color: $textColor;
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin-top: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     display: inline-block;
     font-weight: 700;
@@ -46,6 +46,7 @@
 
     @include md {
         width: auto;
+        font-size: 1.25rem;
     }
     &:hover {
         background-color: darken( $bgColor, 10% );
