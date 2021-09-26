@@ -69,4 +69,12 @@ p {
         background-image: linear-gradient(to right, v.$primary 0%, v.$primary 50%, lighten(v.$primary, 20%) 50%, lighten(v.$primary, 20%) 100%);
     }
 
+    &--span-lg-dblock {
+        @include m.lg { 
+            span {
+                display: block;
+            }
+        }
+    }
+
 }
