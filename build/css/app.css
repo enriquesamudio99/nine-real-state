@@ -906,6 +906,59 @@ p {
   }
 }
 
+.footer {
+  background-color: #3b4862;
+  padding-top: 3.5rem;
+  color: #FFFFFF;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 576px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__heading {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer__heading {
+    font-size: 1.75rem;
+  }
+}
+.footer__img {
+  width: 250px;
+  margin: 0 auto;
+}
+.footer__copyright {
+  margin: 3.5rem 0 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #1e2532;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-footer__link {
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.nav-footer__link:last-of-type {
+  margin-bottom: 0;
+}
+
 .text-center {
   text-align: center;
 }
