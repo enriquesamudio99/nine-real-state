@@ -24,7 +24,9 @@
 
     &__img {
         aspect-ratio: 4 / 3;
-        background-size: cover;
+        background-size: auto 130%;
+        background-repeat: no-repeat;
+        background-position: center center;
         position: relative;
     }
 
